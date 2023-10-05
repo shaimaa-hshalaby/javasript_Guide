@@ -176,3 +176,128 @@ if (true) {
 console.log(x); // 10
 console.log(y); // ReferenceError: y is not defined
 ```
+
+------------------------------------
+## JS Operators
+
+JavaScript operators are symbols or keywords used for performing operations on values or variables. 
+In this tutorial, we'll cover the most common JavaScript operators and how to use them.
+
+### 1. Arithmetic Operators
+
+Arithmetic operators perform mathematical operations on numbers:
+
+- **Addition (+):** Adds two or more values.
+  ```javascript
+  let result = 5 + 3; // result is 8
+  ```
+
+- **Subtraction (-):** Subtracts the second operand from the first.
+  ```javascript
+  let result = 10 - 3; // result is 7
+  ```
+
+- **Multiplication (*):** Multiplies two or more values.
+  ```javascript
+  let result = 4 * 6; // result is 24
+  ```
+
+- **Division (/):** Divides the first operand by the second.
+  ```javascript
+  let result = 12 / 4; // result is 3
+  ```
+
+- **Modulus (%):** Returns the remainder after division.
+  ```javascript
+  let result = 17 % 5; // result is 2
+  ```
+
+### 2. Comparison Operators
+
+Comparison operators compare values and return a Boolean result (true or false):
+
+- **Equal (==):** Checks if two values are equal.
+  ```javascript
+  let isEqual = 5 == 5; // isEqual is true
+  ```
+
+- **Not Equal (!=):** Checks if two values are not equal.
+  ```javascript
+  let isNotEqual = 5 != 3; // isNotEqual is true
+  ```
+
+- **Strict Equal (===):** Checks if two values are equal without type conversion (strict equality).
+  ```javascript
+  let isStrictEqual = 5 === "5"; // isStrictEqual is false
+  ```
+
+- **Strict Not Equal (!==):** Checks if two values are not equal without type conversion (strict inequality).
+  ```javascript
+  let isStrictNotEqual = 5 !== "5"; // isStrictNotEqual is true
+  ```
+
+- **Greater Than (>):** Checks if the first value is greater than the second.
+  ```javascript
+  let isGreaterThan = 10 > 5; // isGreaterThan is true
+  ```
+
+- **Less Than (<):** Checks if the first value is less than the second.
+  ```javascript
+  let isLessThan = 3 < 7; // isLessThan is true
+  ```
+
+### 3. Logical Operators
+
+Logical operators are used to combine or manipulate Boolean values:
+
+- **AND (&&):** Returns true if both operands are true.
+  ```javascript
+  let isTrue = true && true; // isTrue is true
+  ```
+
+- **OR (||):** Returns true if at least one operand is true.
+  ```javascript
+  let isTrue = true || false; // isTrue is true
+  ```
+
+- **NOT (!):** Negates a Boolean value.
+  ```javascript
+  let isFalse = !true; // isFalse is false
+  ```
+
+### 4. Assignment Operators
+
+Assignment operators assign values to variables:
+
+- **Assignment (=):** Assigns a value to a variable.
+  ```javascript
+  let x = 10;
+  ```
+
+- **Addition Assignment (+=):** Adds a value to a variable and assigns the result.
+  ```javascript
+  let x = 5;
+  x += 3; // x is now 8
+  ```
+
+- **Subtraction Assignment (-=):** Subtracts a value from a variable and assigns the result.
+  ```javascript
+  let x = 10;
+  x -= 4; // x is now 6
+  ```
+
+### 5. Other Operators
+
+JavaScript also includes other operators, such as the ternary operator (`? :`), which is a shorthand for an `if...else` statement, and the typeof operator, which checks the data type of a value.
+
+- **Ternary Operator (conditional operator):**
+  ```javascript
+  let age = 18;
+  let message = age >= 18 ? "Adult" : "Minor";
+  ```
+
+- **typeof Operator:**
+  ```javascript
+  let x = 5;
+  let type = typeof x; // type is "number"
+  ```
