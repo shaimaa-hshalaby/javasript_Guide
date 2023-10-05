@@ -99,7 +99,7 @@ Choose the method that best suits your project's needs and helps maintain code c
 
 ---------------------------------------------
 
-### What is a Variable?
+## What is a Variable?
 
 In JavaScript, a variable is a container that holds data.
 Variables allow you to store, access, and manipulate values or objects. You can think of them as named placeholders for data.
