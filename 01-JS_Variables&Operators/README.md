@@ -306,7 +306,7 @@ JavaScript also includes other operators, such as the ternary operator (`? :`), 
 ### Exercise 2: Internal JavaScript
 
 1. Create an HTML file with a button element.
-2. Write an internal JavaScript function that changes the background color of the page when the button is clicked.
+2. Write an internal JavaScript function that fire an alert with a text "Hello from internal script".
 
 ### Exercise 3: External JavaScript
 
@@ -318,6 +318,7 @@ JavaScript also includes other operators, such as the ternary operator (`? :`), 
 
 1. Declare a variable named `name` and assign it your name as a string.
 2. Declare a variable named `age` and assign it your age as a number.
+3. display their values in an alert.
 
 ### Exercise 5: Variable Scope
 
@@ -327,23 +328,16 @@ JavaScript also includes other operators, such as the ternary operator (`? :`), 
 
 ### Exercise 6: Data Types
 
-1. Declare a variable named `isStudent` and assign it a boolean value (true or false) to indicate if you are a student.
+1. Declare a variable named myName and assign it your full name as a string.
+2. Declare a variable named myAge and assign it your age as a number.
+3. Declare a variable named isStudent and assign it a boolean value to indicate if you are currently a student.
+4. Declare a variable named hobbies and assign it an array of at least three hobbies or interests (strings).
+5. display all varibles in an alert.
 
-### Exercise 7: String Manipulation
-
-1. Declare two variables, `firstName` and `lastName`, and assign them your first and last name as strings.
-2. Create a third variable, `fullName`, and use string concatenation to combine `firstName` and `lastName` with a space in between.
-3. Display `fullName` using `console.log()`.
-
-### Exercise 8: Arithmetic Operators
+### Exercise 7: Arithmetic Operators
 
 1. Declare two variables, `num1` and `num2`, and assign them numerical values.
 2. Create a new variable, `sum`, and use the addition operator to calculate the sum of `num1` and `num2`.
 3. Display the result using `console.log()`.
-
-### Exercise 9: Comparison Operators
-
-1. Declare two variables, `x` and `y`, and assign them different numerical values.
-2. Use comparison operators to check if `x` is greater than `y`, if `x` is equal to `y`, and if `x` is not equal to `y`. Display the results.
 
 
