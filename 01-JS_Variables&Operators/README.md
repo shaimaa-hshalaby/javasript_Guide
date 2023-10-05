@@ -295,7 +295,8 @@ JavaScript also includes other operators, such as the ternary operator (`? :`), 
   let age = 18;
   let message = age >= 18 ? "Adult" : "Minor";
   ```
-======================================================================
+--------------------------------------------------
+
 ## Exercises
 
 ### Exercise 1: Adding JavaScript to HTML
