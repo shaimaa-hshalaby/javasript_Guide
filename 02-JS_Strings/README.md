@@ -117,3 +117,52 @@ let newText = text.replace("World", "Universe"); // newText is "Hello, Universe!
 let text = "   Hello, World!   ";
 let trimmedText = text.trim(); // trimmedText is "Hello, World!"
 ```
+
+-------------------------------------------------
+## Exercises
+
+### Exercise 1: String Creation
+
+1. Create a JavaScript string variable named `myString` and assign it the value "Hello, World!".
+
+### Exercise 2: String Length
+
+1. Write a JavaScript function that takes a string as an argument and returns its length. Test it with the `myString` variable.
+
+### Exercise 3: String Concatenation
+
+1. Declare two JavaScript variables, `firstName` and `lastName`, and assign them your first name and last name as strings. Use string concatenation to create a full name and display it.
+
+### Exercise 4: Template Literals
+
+1. Rewrite the previous exercise using template literals to create the full name.
+
+### Exercise 5: Uppercase and Lowercase
+
+1. Create a JavaScript function that takes a string as input and returns the same string in all uppercase letters. Test it with a sample string "This is an Example String."
+2. Create another JavaScript function that takes a string as input and returns the same string in all lowercase letters. Test it with a sample string "JavaScript Exercises Are Fun!".
+
+### Exercise 6: Substring
+
+1. Write a JavaScript function that extracts a substring from a given string. The function should take the original string, a starting index, and an ending index as parameters and return the extracted substring.
+Test it with a sample string "JavaScript is a powerful scripting language."
+find the substring between the indices 11 & 20
+
+### Exercise 7: Index of and Last Index Of
+
+1. Create a JavaScript function that finds and returns the index of the first occurrence of a specific character in a string. Test it with a sample string and character.
+9. Write another JavaScript function that finds and returns the index of the last occurrence of a specific character in a string. Test it with a sample string and character.
+
+### Exercise 8: String Split
+
+10. Create a JavaScript function that splits a given string into an array of words. The function should take the original string and a separator (e.g., space) as parameters and return the array of words.
+
+### Exercise 9: String Replace
+
+11. Write a JavaScript function that replaces all occurrences of a specific word in a string with another word. Test it with a sample string and words.
+
+### Exercise 10: String Trimming
+
+12. Create a JavaScript function that removes all leading and trailing spaces from a given string. Test it with a sample string containing extra spaces.
+
+These exercises cover various aspects of JavaScript strings, from basic string manipulation to more advanced operations. They should help reinforce the concepts you've learned in the tutorial.
