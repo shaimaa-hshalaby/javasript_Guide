@@ -74,8 +74,9 @@ function add(a, b) {
 const result = add(3, 5); // result is 8
 ```
 
-## 4. Function Return Values
+## 4. Function Return Statement
 
+#### Function return values
 Functions can return values using the `return` statement. A function can return a single value or an object.
 
 ```javascript
@@ -85,6 +86,24 @@ function multiply(a, b) {
 
 const product = multiply(4, 6); // product is 24
 ```
+
+#### Function return nothing
+In JavaScript, you can explicitly return "nothing" or, more accurately, return an undefined value by using the `return` statement without any value.
+
+Here's an example:
+
+```javascript
+    function returnNothing() {
+        return;
+    }
+    
+    const result = returnNothing();
+    console.log(result); // Outputs: undefined
+```
+
+In this example, the `returnNothing` function does not have a return value specified. When you call the function and assign its result to the `result` variable, it becomes `undefined`.
+
+Returning nothing or `undefined` can be useful in scenarios where a function is used for its side effects (e.g., modifying global variables, performing I/O operations, or displaying something on the user interface) rather than producing a specific result.
 
 ## 5. Function Expressions and Arrow Functions
 
