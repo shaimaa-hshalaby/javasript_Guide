@@ -16,7 +16,7 @@ let stringConstructed = new String("This is a constructed string.");
 ```
 
 However, using quotes is the more common and convenient way to create strings.
-
+---------------------
 ### String Length
 
 You can find the length of a string using the `length` property:
@@ -25,7 +25,7 @@ You can find the length of a string using the `length` property:
 let text = "Hello, World!";
 let length = text.length; // length is 13
 ```
-
+------------------------
 ### String Concatenation
 
 #### Using `+` Operator:
@@ -49,7 +49,7 @@ let fullName = `${firstName} ${lastName}`; // fullName is "John Doe"
 
 Template literals also support multiline strings, making them a powerful choice for string concatenation and formatting. 
 
-
+-------------------------------
 ### String Methods
 
 JavaScript provides numerous built-in methods for working with strings. Here are some commonly used string methods:
@@ -117,15 +117,3 @@ let newText = text.replace("World", "Universe"); // newText is "Hello, Universe!
 let text = "   Hello, World!   ";
 let trimmedText = text.trim(); // trimmedText is "Hello, World!"
 ```
-
-### Template Literals (ES6+)
-
-Template literals allow you to create multiline strings and include variables or expressions using `${}`:
-
-```javascript
-let name = "Alice";
-let greeting = `Hello, ${name}!
-How are you today?`;
-```
-
-These are the basics of working with JavaScript strings. String manipulation is a fundamental part of web development, and mastering these concepts will help you work effectively with text data in your JavaScript applications.
