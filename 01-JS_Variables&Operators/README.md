@@ -295,9 +295,59 @@ JavaScript also includes other operators, such as the ternary operator (`? :`), 
   let age = 18;
   let message = age >= 18 ? "Adult" : "Minor";
   ```
+======================================================================
+## Exercises
 
-- **typeof Operator:**
-  ```javascript
-  let x = 5;
-  let type = typeof x; // type is "number"
-  ```
+### Exercise 1: Adding JavaScript to HTML
+
+1. Create an HTML file and include a `<script>` tag to display an alert with the message "Hello, World!" when the page loads.
+
+### Exercise 2: Internal JavaScript
+
+1. Create an HTML file with a button element.
+2. Write an internal JavaScript function that changes the background color of the page when the button is clicked.
+
+### Exercise 3: External JavaScript
+
+1. Create an external JavaScript file (`script.js`) and an HTML file.
+2. Link the external JavaScript file to the HTML file.
+3. In the external JavaScript file, define a function that, when called, displays a custom message in an alert.
+
+### Exercise 4: Event Listeners
+
+1. Create an HTML file with a button element.
+2. In an external JavaScript file, use an event listener to show an alert with the message "Button Clicked!" when the button is clicked.
+
+### Exercise 5: Variables
+
+1. Declare a variable named `name` and assign it your name as a string.
+2. Declare a variable named `age` and assign it your age as a number.
+
+### Exercise 6: Variable Scope
+
+1. Create a function called `printMessage` inside a script tag.
+2. Inside the function, declare a variable `message` and assign it a string value.
+3. Call the `printMessage` function and try to access the `message` variable outside the function. What happens, and why?
+
+### Exercise 7: Data Types
+
+1. Declare a variable named `isStudent` and assign it a boolean value (true or false) to indicate if you are a student.
+
+### Exercise 8: String Manipulation
+
+1. Declare two variables, `firstName` and `lastName`, and assign them your first and last name as strings.
+2. Create a third variable, `fullName`, and use string concatenation to combine `firstName` and `lastName` with a space in between.
+3. Display `fullName` using `console.log()`.
+
+### Exercise 9: Arithmetic Operators
+
+1. Declare two variables, `num1` and `num2`, and assign them numerical values.
+2. Create a new variable, `sum`, and use the addition operator to calculate the sum of `num1` and `num2`.
+3. Display the result using `console.log()`.
+
+### Exercise 10: Comparison Operators
+
+1. Declare two variables, `x` and `y`, and assign them different numerical values.
+2. Use comparison operators to check if `x` is greater than `y`, if `x` is equal to `y`, and if `x` is not equal to `y`. Display the results.
+
+
