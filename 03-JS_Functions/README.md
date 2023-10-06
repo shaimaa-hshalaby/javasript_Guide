@@ -178,3 +178,11 @@ const result = factorial(5); // result is 120
 ## Conclusion
 
 JavaScript functions are a fundamental part of the language and are used extensively in web development and beyond. Understanding how to create, use, and manipulate functions is essential for becoming proficient in JavaScript. As you gain experience, you'll discover the versatility and power of functions in building complex applications.
+
+
+
+
+To do list
+----------
+1. "Indirect" vs "Direct" Function Execution in JavaScript
+2. call(), apply() and bind()
