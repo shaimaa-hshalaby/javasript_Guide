@@ -281,7 +281,6 @@ const result = factorial(5); // result is 120
 
 13. Write a higher-order function called `transformArray` that takes an array of numbers and a transformation function as its parameters. The transformation function should modify each element in the array in some way (e.g., double it, square it, etc.). The `transformArray` function should return a new array with the transformed elements. Test it with different transformations.
 
-Feel free to modify these exercises or add more of your own to further practice JavaScript functions.
 
 To do list
 ----------
