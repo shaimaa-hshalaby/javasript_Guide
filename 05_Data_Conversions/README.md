@@ -212,3 +212,33 @@ const type = typeof value;
 
 console.log(type); // Result is "number"
 ```
+
+---------------------------------------------------
+
+## Exercises
+
+**Exercise 1:** Converting Strings to Numbers
+
+Write a JavaScript function called `convertToNumber` that takes a string as input and uses the unary plus operator to convert it into a number. Test the function with various numeric string inputs.
+
+**Exercise 2:** Handling Invalid Values
+
+Write a function `handleInvalidValue` that takes a string as input and uses the unary plus operator to attempt conversion to a number. If the conversion results in `NaN`, return a custom error message; otherwise, return the converted number.
+
+**Exercise 3:** Converting Booleans to Numbers
+
+Design a function `convertBooleanToNumber` that takes a boolean value as input and uses the unary plus operator to convert it to a number (`1` for `true` and `0` for `false`). Test the function with various boolean inputs.
+
+**Exercise 4:** Conversion in Real Scenarios
+
+Imagine a scenario where you receive user input as strings, and you need to validate and convert them to numbers. Create a function `validateAndConvert` that takes a string as input, checks if it represents a valid number, and returns the number if valid or an error message if not. Use the unary plus operator for conversion.
+
+**Exercise 6:** Advanced Conversion
+
+Write a function `advancedConversion` that takes an input value and uses the unary plus operator to perform the following conversions:
+- If the input is a numeric string, convert it to a number.
+- If the input is a boolean, convert it to a number as described earlier.
+- If the input is already a number, return it.
+- For any other type of input, return `NaN`.
+
+These exercises will help reinforce your understanding of data type conversion in JavaScript and how to use the unary plus operator effectively.
