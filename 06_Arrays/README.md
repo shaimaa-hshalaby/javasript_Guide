@@ -1,5 +1,4 @@
-# JavaScript Arrays: A Comprehensive Guide
-
+# JavaScript Arrays
 
 ## 1. Introduction to Arrays
 
