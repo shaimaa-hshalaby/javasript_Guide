@@ -295,6 +295,105 @@ JavaScript also includes other operators, such as the ternary operator (`? :`), 
   let age = 18;
   let message = age >= 18 ? "Adult" : "Minor";
   ```
+
+## Shorthand Operators in JavaScript
+
+Shorthand operators are a concise way to perform common operations, often reducing multiple lines of code into a single line. They can make your code more readable and save you time and effort. Let's explore some common shorthand operators.
+
+## Assignment Shorthand
+
+### += (Addition Assignment)
+
+The `+=` operator is used to add the right operand to the left operand and assign the result to the left operand.
+
+```javascript
+let num = 5;
+num += 3; // Equivalent to num = num + 3;
+console.log(num); // Output: 8
+```
+
+### -= (Subtraction Assignment)
+
+The `-=` operator subtracts the right operand from the left operand and assigns the result to the left operand.
+
+```javascript
+let num = 10;
+num -= 4; // Equivalent to num = num - 4;
+console.log(num); // Output: 6
+```
+
+### *= (Multiplication Assignment)
+
+The `*=` operator multiplies the left operand by the right operand and assigns the result to the left operand.
+
+```javascript
+let num = 3;
+num *= 2; // Equivalent to num = num * 2;
+console.log(num); // Output: 6
+```
+
+### /= (Division Assignment)
+
+The `/=` operator divides the left operand by the right operand and assigns the result to the left operand.
+
+```javascript
+let num = 12;
+num /= 4; // Equivalent to num = num / 4;
+console.log(num); // Output: 3
+```
+
+### %= (Modulo Assignment)
+
+The `%=` operator calculates the remainder of dividing the left operand by the right operand and assigns the result to the left operand.
+
+```javascript
+let num = 17;
+num %= 5; // Equivalent to num = num % 5;
+console.log(num); // Output: 2
+```
+
+## Increment and Decrement Shorthand
+
+### ++ (Increment Operator)
+
+The `++` operator increments a variable by `1`.
+
+```javascript
+let count = 5;
+count++; // Equivalent to count = count + 1;
+console.log(count); // Output: 6
+```
+
+### -- (Decrement Operator)
+
+The `--` operator decrements a variable by `1`.
+
+```javascript
+let count = 8;
+count--; // Equivalent to count = count - 1;
+console.log(count); // Output: 7
+```
+
+## 5. Conditional (Ternary) Operator
+
+The conditional (ternary) operator is a concise way to write conditional statements.
+
+```javascript
+let age = 18;
+const status = age >= 18 ? "Adult" : "Minor";
+console.log(status); // Output: "Adult"
+```
+
+## 6. String Concatenation
+
+You can use the `+=` operator for string concatenation.
+
+```javascript
+let greeting = "Hello, ";
+greeting += "World!";
+console.log(greeting); // Output: "Hello, World!"
+```
+
 --------------------------------------------------
 
 ## Exercises
