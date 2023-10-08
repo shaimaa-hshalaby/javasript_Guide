@@ -307,3 +307,58 @@ const originalArray = [1, 2, 3];
 const reversedArray = originalArray.slice().reverse(); // Using slice and reverse
 const spreadReversed = [...originalArray].reverse(); // Using spread and reverse
 ```
+
+-----------------------------------------
+## Exercises 
+
+**Exercise 1: Accessing Elements**
+- Given the array `[10, 20, 30, 40, 50]`, write a function that returns the first and last elements. For example, `getFirstAndLast([10, 20, 30, 40, 50])` should return `[10, 50]`.
+
+**Exercise 2: Modifying Elements**
+- Write a function that takes an array of strings like `["apple", "banana", "cherry"]` and capitalizes the first letter of each string. The result should be `["Apple", "Banana", "Cherry"]`.
+
+**Exercise 3: Array Properties**
+- Given the array `[12, 18, 24, 30, 36]`, write a function that calculates the average of all the numbers in the array. The result should be `24`.
+
+**Exercise 4: Adding and Removing Elements**
+- Create an array of your favorite colors, e.g., `["red", "blue", "green"]`. Write a function to add a new color "purple" to the beginning of the array. Then write another function to remove the last color from the array. The final array should be `["purple", "red", "blue"]`.
+
+**Exercise 5: Searching and Filtering**
+- Given the array `["Alice", "Bob", "Charlie", "David", "Eve"]`, write a function that checks if the name "Charlie" is in the array and returns `true`. For example, `isNameInArray(["Alice", "Bob", "Charlie", "David", "Eve"], "Charlie")` should return `true`.
+
+**Exercise 6: Sorting Arrays**
+- Write a function that sorts an array of numbers like `[5, 3, 8, 1, 4]` in ascending order. The result should be `[1, 3, 4, 5, 8]`.
+
+**Exercise 7: Iterating Through Arrays**
+- Given an array of student objects like `[{ name: "Alice", score: 90 }, { name: "Bob", score: 85 }, { name: "Charlie", score: 92 }]`, write a function that calculates the average score of all students. The result should be `89`.
+
+**Exercise 8: Multidimensional Arrays**
+- Create a 2D tic-tac-toe board as an array, where `X` represents X's move, `O` represents O's move, and `null` represents an empty cell. Write a function that checks if there's a winner (three X's or O's in a row, column, or diagonal). For example, given the board:
+  ```
+  [
+    ["X", "O", null],
+    ["X", "O", null],
+    ["X", null, null]
+  ]
+  ```
+  The function should return `"X"` as the winner.
+
+**Exercise 9: Array Methods**
+- Given an array of words like `["apple", "banana", "cherry"]`, write a function that returns a new array containing the lengths of the words. The result should be `[5, 6, 6]`.
+
+**Exercise 10: Array Destructuring**
+- Write a function that swaps the values of two elements in an array using destructuring. For example, given the array `[10, 20]`, the function should return `[20, 10]`.
+
+**Exercise 11: Working with Arrays**
+- Write a function that merges two sorted arrays like `[1, 3, 5]` and `[2, 4, 6]` into a single sorted array. The result should be `[1, 2, 3, 4, 5, 6]`.
+
+**Exercise 12: Array of Objects**
+- Create an array of objects representing books with properties like `title`, `author`, and `year`, e.g.,
+  ```
+  [
+    { title: "Book1", author: "Author1", year: 2000 },
+    { title: "Book2", author: "Author2", year: 1998 },
+    { title: "Book3", author: "Author3", year: 2005 }
+  ]
+  ```
+  Write a function that finds the oldest book in the array based on the `year` property. The result should be the book object with the oldest year.
