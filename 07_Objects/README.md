@@ -17,12 +17,12 @@ const person = {
     firstName: "John",
     lastName: "Doe",
     age: 30,
-    hobbies: 
+    hobbies: ["Reading","Coding"],
     isStudent: false,
 };
 ```
 
-In this example, `person` is an object with four properties: `firstName`, `lastName`, `age`, and `isStudent`.
+In this example, `person` is an object with five properties: `firstName`, `lastName`, `age`, `hobbies` and `isStudent`.
 
 ## 2. Creating Objects
 
