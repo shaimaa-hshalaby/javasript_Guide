@@ -187,6 +187,6 @@ Create three instances of the `Product` object with different values and store t
 
 -----------------------------------------------------------------------
 ## To do
-## 8. Object Prototypes
-## 9. Object Inheritance
-## 10. Object Serialization
+8. Object Prototypes
+9. Object Inheritance
+10. 10. Object Serialization
