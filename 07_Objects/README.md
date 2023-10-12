@@ -140,25 +140,53 @@ for (const key in person) {
     console.log(`${key}: ${person[key]}`);
 }
 ```
+---------------------------------------------------------------------
+## Exercises
 
+
+### Exercise 1: Create an Object
+Create an object called `book` that represents a book with the following properties:
+- `title` (string)
+- `author` (string)
+- `publishedYear` (number)
+- `isAvailable` (boolean)
+
+### Exercise 2: Access and Modify Properties
+
+Using the `book` object from Exercise 1, perform the following tasks:
+- Access and log the `author` property to the console.
+- Change the `publishedYear` to the current year.
+- Log the updated `book` object to the console.
+
+### Exercise 3: Add and Delete Properties
+
+Starting with the `book` object, add a new property called `genre` (string) representing the book's genre. Then, delete the `isAvailable` property. Log the modified `book` object to the console.
+
+### Exercise 4: Object Methods
+
+Create an object named `car` with the following properties:
+- `make` (string)
+- `model` (string)
+- `year` (number)
+- `startEngine` (a function that logs "Engine started" to the console)
+
+Call the `startEngine` method on the `car` object to start the engine.
+
+### Exercise 5: Loop Through Properties
+
+Create an object called `person` with various properties (e.g., name, age, address). Use a `for...in` loop to iterate through the properties of the `person` object and log each property and its value to the console.
+
+### Exercise 6: Object Constructors
+
+Define an object constructor function `Product` that represents a product with the following properties:
+- `name` (string)
+- `price` (number)
+- `description` (string)
+
+Create three instances of the `Product` object with different values and store them in an array. Loop through the array and log each product's details to the console.
+
+-----------------------------------------------------------------------
+## To do
 ## 8. Object Prototypes
-
-In JavaScript, objects are linked to a prototype object, which allows them to inherit properties and methods. Understanding prototypes is crucial for working with objects efficiently.
-
 ## 9. Object Inheritance
-
-You can create object hierarchies using inheritance to share properties and methods between objects.
-
 ## 10. Object Serialization
-
-Objects can be converted to JSON strings and vice versa for data interchange.
-
-## 11. Common Use Cases
-
-Objects are used in various scenarios, including modeling real-world entities, creating data structures, and working with APIs.
-
-## 12. Conclusion
-
-JavaScript objects are a versatile and powerful feature of the language. Understanding how to create, manipulate, and work with objects is essential for effective JavaScript programming. This guide has covered the fundamentals, and you can explore more advanced topics to become a proficient object-oriented JavaScript developer.
-
-This comprehensive guide provides you with a solid foundation for working with JavaScript objects, allowing you to build complex and
