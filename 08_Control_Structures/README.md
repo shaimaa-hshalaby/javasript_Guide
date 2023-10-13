@@ -91,7 +91,7 @@ if (grade >= 90) {
 
 #### `switch` statement
 
-The `switch` statement is used to select one of many code blocks to be executed.
+The `switch` statement is a control structure in JavaScript used to make decisions based on the value of an expression. It's particularly useful when you want to compare a single value against multiple possible values and execute different code blocks based on the match.
 
 ```javascript
 switch (expression) {
@@ -106,6 +106,12 @@ switch (expression) {
     // Code to execute if none of the cases match
 }
 ```
+
+- `expression` is the value you want to compare to the cases.
+- Each `case` represents a specific value that `expression` might match.
+- The code block associated with each `case` is executed if `expression` matches the value.
+- `break` is used to exit the `switch` statement after a case is executed.
+- `default` is optional and provides a code block to execute when no cases match.
 
 Example:
 
@@ -122,7 +128,6 @@ switch (day) {
     console.log("It's a regular day.");
 }
 ```
-
 
 #### Conditional Ternary Expression
 
