@@ -289,9 +289,6 @@ In this example, when `i` is equal to 2, the `continue` statement is encountered
 ###  JavaScript Labeled Statements
 
 Labeled statements are used to associate a label with a specific block of code. This label can be referenced by `break` and `continue` statements to control the flow of execution. While labeled statements are not frequently used, they can be valuable in situations where you need fine-grained control over nested loops.
-
-### Syntax of Labeled Statements
-
 The syntax of a labeled statement is straightforward. You place a label before a statement or a block of code. Here's how it's done:
 
 ```javascript
