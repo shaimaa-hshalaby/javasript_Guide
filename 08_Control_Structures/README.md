@@ -497,18 +497,6 @@ In summary, understanding truthy and falsy values is crucial for making logical 
 
 ## Exercises
 
-
-1. Write a JavaScript function that takes an integer as an input and returns "Even" if the number is even and "Odd" if it's odd.
-
-2. Create an object representing a book with properties for title, author, and publication year. Write a function that checks if the book's publication year is before 2000 and returns "Old" or "Modern" based on the condition.
-
-3. Use a `for` loop to iterate through an array of numbers and print only the even numbers to the console.
-
-4. Write a JavaScript program that asks the user for their age and then uses conditional statements to determine if they are a child, teenager, or an adult and prints an appropriate message.
-
-5. Implement a simple calculator using a `switch` statement. The program should take two numbers and an operator (+, -, *, /) as input and perform the corresponding operation.
-Certainly! Here are some exercises related to the JavaScript Control Structures and Truthy/Falsy Values tutorial:
-
 **Control Structures Exercises:**
 
 1. Write a JavaScript function that takes an integer as an input and returns "Even" if the number is even and "Odd" if it's odd.
