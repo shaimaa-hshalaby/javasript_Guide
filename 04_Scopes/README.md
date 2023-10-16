@@ -51,6 +51,7 @@ In JavaScript, variable scope determines where a variable can be accessed within
   ```
   
   Block-scoped variables provide better control over variable visibility and help prevent issues related to variable hoisting.
+  
 ----------------------------------------
 ### Shadowed Variables
 
@@ -74,6 +75,7 @@ console.log(x); // Outputs: 10 (the outer 'x' remains unchanged)
 In this example, there are two variables named `x`: one declared in the outer scope and another declared in the inner function's scope. When you access `x` within the `shadowExample` function, it refers to the inner variable, effectively shadowing the outer `x`. However, outside the function, the outer `x` is still accessible.
 
 Shadowing can sometimes lead to confusion and unexpected behavior, especially when variables have the same name but represent different values or serve different purposes in different scopes. To avoid shadowing and potential issues, it's generally a good practice to use different variable names when possible or be mindful of variable naming to prevent unintentional shadowing.
+
 ---------------------------------------
 
 ## Understanding the differences between `var`, `let`, and `const` in Modern JavaScript
