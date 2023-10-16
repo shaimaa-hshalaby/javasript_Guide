@@ -89,6 +89,33 @@ function divide(a, b) {
 
 In this example, we've created a custom error message to clarify why the division operation failed.
 
+### Here's a full example that demonstrates the concepts of custom error and error handling:
+
+```javascript
+// Example: Error Handling in JavaScript
+
+// Function to divide two numbers
+function divide(a, b) {
+  try {
+    if (b === 0) {
+      throw new Error("Division by zero is not allowed.");
+    }
+    return a / b;
+  } catch (error) {
+    // Handle the error gracefully
+    console.error("An error occurred:", error.message);
+    return NaN; // Return a safe default value
+  }
+}
+
+// Example usage
+console.log("Result:", divide(10, 2)); // Result: 5
+console.log("Result:", divide(8, 0));  // An error occurred: Division by zero is not allowed. Result: NaN
+console.log("Result:", divide(6, 3));  // Result: 2
+
+```
+
+
 ## 5. Best Practices for Error Handling
 
 Effective error handling is essential for robust code. Here are some best practices to follow:
@@ -106,19 +133,57 @@ Effective error handling is essential for robust code. Here are some best practi
 
 - **Test Error Scenarios**: Write test cases that cover error scenarios to ensure your error handling works as expected.
 
-=======================================================================
-## 6. Common Error Handling Patterns
+--------------------------------------------
+## Exercises
 
-### Promises and Async/Await
+**Exercise 1:** Syntax Errors
 
-When working with asynchronous code, you can use the `.catch()` method on Promises or the `try...catch` statement with `async/await` to handle errors in asynchronous operations.
+Identify and correct the syntax errors in the following code snippets:
 
-### Error Codes
+```javascript
+a = 5;
+console.log("Hello, world!)
+if (x > 10 {
+  console.log("x is greater than 10.");
+}
+```
 
-In some cases, applications use error codes to categorize and handle errors systematically. Each error code corresponds to a specific type of error and allows for more efficient error management.
+**Exercise 2:** Runtime Errors
 
-### Middleware in Express.js
+1. Write code that triggers a runtime error (e.g., a `TypeError`, `ReferenceError`, or any other runtime error) and explain what caused the error.
 
-In Express.js, middleware functions can handle errors globally for an application. This approach simplifies error handling by centralizing it in a single location.
+2. Write code that attempts to divide a number by zero and handle this error gracefully using a `try...catch` statement.
 
-This tutorial provides a solid foundation for error handling in JavaScript. It's essential to become familiar with different types of errors, understand how to use the `try...catch` statement, and follow best practices to create more reliable and robust applications. Additionally, exploring advanced error handling patterns and strategies will enhance your skills as a JavaScript developer.
+**Exercise 3:** Logical Errors
+
+Identify the logical errors in the following code and correct them:
+
+```javascript
+function calculateTotal(price, taxRate) {
+  return price + taxRate; // Logical error: Incorrect tax calculation
+}
+```
+
+**Exercise 4:** Error Handling
+
+1. Write a function that takes two parameters and attempts to divide them. Handle any division by zero errors using a `try...catch` statement and return a custom error message if the denominator is zero.
+
+2. Create a custom error type named `NetworkError` and write a function that simulates a network request. If the request fails, throw a `NetworkError` with a descriptive message.
+
+3. Write a function that calculates the factorial of a number. Handle invalid inputs (negative numbers) by throwing a custom error.
+
+**Exercise 5:** Best Practices
+
+For each of the following scenarios, explain which best practices for error handling are violated and how they can be improved:
+
+Scenario 1: An application silently fails when a database connection fails, and no error message is logged.
+
+Scenario 2: An application displays technical error messages to end-users, exposing internal details.
+
+Scenario 3: A developer uses generic error messages like "An error occurred" without providing specific information.
+
+Feel free to work through these exercises and check your solutions against the concepts covered in the tutorial. Error handling is an essential skill in JavaScript programming, and these exercises will help reinforce your knowledge.
+
+## To do
+-   Promises and Async/Await
+-   Error Codes
