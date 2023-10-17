@@ -44,25 +44,35 @@ JavaScriptCore, also known as Nitro, is the JavaScript engine used in Safari. It
 
 ### Parsing
 
-The first step in processing JavaScript code is parsing, where the engine analyzes and converts the code into an abstract syntax tree (AST). The AST represents the structure of the code.
+When you load a JavaScript file in a web browser, the browser's JavaScript engine parses the source code, converting it into an Abstract Syntax Tree (AST). The parser checks the code for syntax errors and translates it into a form that the engine can work with. The parsing phase is essential for ensuring your code follows the correct syntax and can be processed effectively by the engine.
 
-### Compilation
+### Interpretation
 
-After parsing, the engine may compile the code into bytecode or machine code, depending on the engine and optimization techniques. This compilation process varies between engines and impacts execution speed.
-
-### Execution
-
-Once compiled, the code is executed. The engine handles the execution of JavaScript instructions, working with data, objects, and functions, and managing memory. The results are displayed on the web page.
+After parsing, the engine typically interprets the code line by line. It reads the parsed code and executes it one statement at a time. This is called "interpretation" and is relatively slow.
 
 ## 4. Optimizations and Just-In-Time Compilation
 
-JavaScript engines often incorporate optimization techniques to enhance performance. One significant technique is just-in-time (JIT) compilation. JIT compilers convert JavaScript code into machine code just before execution, leading to substantial speed improvements.
+To improve performance, modern JavaScript engines use a technique called Just-In-Time (JIT) compilation. With JIT compilation, the engine doesn't simply interpret the code but also compiles parts of it into machine code on-the-fly, just before executing them. This compiled machine code is more efficient for execution than interpreting the JavaScript source directly.
+The key point here is that JIT compilation occurs at runtime, and it targets only the specific parts of the code that are frequently executed or "hot." The engine identifies these hot code paths during execution and compiles them into machine code to speed up their execution. The rest of the code remains in an intermediate form that is easy to interpret but slower to execute.
+
+This approach combines the flexibility of interpretation with the performance benefits of compilation. It allows JavaScript to be a dynamic and highly flexible language while still delivering good performance for frequently executed code.
+
+In summary, JIT compilation in JavaScript means that parts of your code are compiled into machine code just before execution, rather than compiling the entire code upfront. This dynamic compilation process optimizes the code's performance and is a key reason modern JavaScript engines are so fast.
 
 ## 5. Browser Compatibility
 
-Web developers need to consider browser compatibility when writing JavaScript code. While JavaScript is standardized, browser engines may have slight differences in their implementations. Tools like Babel and transpilers help developers write cross-browser compatible code.
+Web developers need to consider browser compatibility when writing JavaScript code. While JavaScript is standardized, browser engines may have slight differences in their implementations. So Browser compatibility refers to the ability of web pages and applications to function reliably across various web browsers, including popular choices like Google Chrome, Mozilla Firefox, Microsoft Edge, and Apple Safari.
 
-## 6. Tools for JavaScript Engine Optimization
+## 6. Modern Browsers and JavaScript Engines
+Modern web browsers, including Chrome, Firefox, Edge, and Safari, have made significant improvements to their JavaScript engines. These improvements focus on two primary aspects:
+
+### Compatibility
+Modern browsers adhere to the ECMAScript standard, ensuring a high degree of compatibility. This standard defines the scripting language specification, allowing developers to write JavaScript code that behaves consistently across different browsers. While there may still be some browser-specific differences, modern engines have significantly reduced these disparities.
+
+### Performance
+Performance optimization is another critical aspect of modern JavaScript engines. They use advanced techniques, such as Just-In-Time (JIT) compilation and adaptive optimization, to execute JavaScript code efficiently. These engines aim to minimize the time it takes to execute JavaScript, ensuring that web applications load and run smoothly for users.
+
+## 7. Tools for JavaScript Engine Optimization
 
 Web developers have access to various tools and techniques for optimizing JavaScript performance:
 
@@ -74,6 +84,3 @@ Web developers have access to various tools and techniques for optimizing JavaSc
 
 - **Minification**: Minifying JavaScript code by removing white spaces, comments, and shortening variable names can reduce file sizes, improving loading times.
 
-## 7. Conclusion
-
-Understanding how JavaScript engines work in web browsers is essential for web developers. It empowers developers to write efficient and cross-browser compatible code. With an awareness of popular JavaScript engines and optimization techniques, you can build high-performance web applications and deliver a smooth user experience.
