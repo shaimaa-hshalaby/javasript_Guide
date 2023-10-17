@@ -211,16 +211,6 @@ The function `hoistedFunction` is hoisted and can be invoked before the declarat
 
 - Declare your functions before using them to make your code more readable and self-explanatory.
 
-## 6. Conclusion
-
-JavaScript hoisting is a fundamental concept that helps you understand how variable and function declarations are processed in the language. While it can be beneficial, it's important to use hoisting wisely and understand its limitations to write clean and predictable code.
-
-Understanding hoisting enables you to write JavaScript code that is easier to maintain and debug, reducing the chances of unexpected behavior in your applications.
-
-This guide should provide you with a solid understanding of hoisting in JavaScript, how it works, and how to use it effectively.
-
-
-
 ----------------------------------------
 ## Exercises
 
