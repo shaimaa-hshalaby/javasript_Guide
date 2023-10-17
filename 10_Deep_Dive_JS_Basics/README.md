@@ -57,32 +57,12 @@ Modern JavaScript is employed in a wide range of applications, from web developm
 
 By embracing modern JavaScript, developers can create efficient, maintainable, and highly functional applications across various platforms and environments.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-## 1. Introduction to JavaScript Browser Engines
+## 7. Introduction to JavaScript Browser Engines
 
 A JavaScript engine is a crucial component of web browsers that interprets and executes JavaScript code. 
 When you visit a web page with JavaScript, the engine processes the JavaScript instructions, enabling dynamic content and interactivity.
 
-## 2. Popular JavaScript Engines
+## 8. Popular JavaScript Engines
 
 ### V8 (Google Chrome)
 
@@ -97,7 +77,7 @@ SpiderMonkey is the JavaScript engine used by Mozilla Firefox. It was one of the
 
 JavaScriptCore, also known as Nitro, is the JavaScript engine used in Safari. It has evolved significantly over the years, delivering performance improvements and adhering to web standards.
 
-## 3. How JavaScript Engines Work
+## 9. How JavaScript Engines Work
 
 ### Parsing
 
@@ -107,7 +87,7 @@ When you load a JavaScript file in a web browser, the browser's JavaScript engin
 
 After parsing, the engine typically interprets the code line by line. It reads the parsed code and executes it one statement at a time. This is called "interpretation" and is relatively slow.
 
-## 4. Optimizations and Just-In-Time Compilation
+## 10. Optimizations and Just-In-Time Compilation
 
 To improve performance, modern JavaScript engines use a technique called Just-In-Time (JIT) compilation. With JIT compilation, the engine doesn't simply interpret the code but also compiles parts of it into machine code on-the-fly, just before executing them. This compiled machine code is more efficient for execution than interpreting the JavaScript source directly.
 The key point here is that JIT compilation occurs at runtime, and it targets only the specific parts of the code that are frequently executed or "hot." The engine identifies these hot code paths during execution and compiles them into machine code to speed up their execution. The rest of the code remains in an intermediate form that is easy to interpret but slower to execute.
@@ -116,11 +96,11 @@ This approach combines the flexibility of interpretation with the performance be
 
 In summary, JIT compilation in JavaScript means that parts of your code are compiled into machine code just before execution, rather than compiling the entire code upfront. This dynamic compilation process optimizes the code's performance and is a key reason modern JavaScript engines are so fast.
 
-## 5. Browser Compatibility
+## 11. Browser Compatibility
 
 Web developers need to consider browser compatibility when writing JavaScript code. While JavaScript is standardized, browser engines may have slight differences in their implementations. So Browser compatibility refers to the ability of web pages and applications to function reliably across various web browsers, including popular choices like Google Chrome, Mozilla Firefox, Microsoft Edge, and Apple Safari.
 
-## 6. Modern Browsers and JavaScript Engines
+## 12. Modern Browsers and JavaScript Engines
 Modern web browsers, including Chrome, Firefox, Edge, and Safari, have made significant improvements to their JavaScript engines. These improvements focus on two primary aspects:
 
 ### Compatibility
@@ -129,7 +109,7 @@ Modern browsers adhere to the ECMAScript standard, ensuring a high degree of com
 ### Performance
 Performance optimization is another critical aspect of modern JavaScript engines. They use advanced techniques, such as Just-In-Time (JIT) compilation and adaptive optimization, to execute JavaScript code efficiently. These engines aim to minimize the time it takes to execute JavaScript, ensuring that web applications load and run smoothly for users.
 
-## 7. Tools for JavaScript Engine Optimization
+## 13. Tools for JavaScript Engine Optimization
 
 Web developers have access to various tools and techniques for optimizing JavaScript performance:
 
