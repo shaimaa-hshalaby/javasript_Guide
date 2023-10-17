@@ -1,24 +1,3 @@
-# JavaScript Browser Engines Tutorial
-
-JavaScript, often abbreviated as JS, is a versatile and essential programming language for the web. When you interact with websites and web applications, JavaScript is the technology 
-behind the dynamic and interactive features you encounter. Understanding how JavaScript is executed in web browsers is crucial for web developers. 
-In this tutorial, we will explore JavaScript browser engines, which are responsible for interpreting and executing your JavaScript code in web browsers.
-
-## Table of Contents
-
-1. **Introduction to JavaScript Browser Engines**
-2. **Popular JavaScript Engines**
-   - V8 (Google Chrome)
-   - SpiderMonkey (Mozilla Firefox)
-   - JavaScriptCore (Apple Safari)
-3. **How JavaScript Engines Work**
-   - Parsing
-   - Compilation
-   - Execution
-4. **Optimizations and Just-In-Time Compilation**
-5. **Browser Compatibility**
-6. **Tools for JavaScript Engine Optimization**
-7. **Conclusion**
 
 ## 1. Introduction to JavaScript Browser Engines
 
