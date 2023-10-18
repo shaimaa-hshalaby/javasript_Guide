@@ -27,7 +27,7 @@ greet("Alice"); // Output: "Hello, Alice!"
 
 ### Function Expression
 
-Another way to create a function is as an expression by assigning it to a variable. This is known as a function expression.
+Another way to create a function is as an expression by assigning it to a variable passed as arguments to other functions, and returned as values from functions. This is known as a function expression.
 
 ```javascript
 const greet = function(name) {
@@ -36,6 +36,8 @@ const greet = function(name) {
 
 greet("Bob"); // Output: "Hello, Bob!"
 ```
+
+With function expressions, you reference the function through the variable name, as the previous example, we call greet() function by the variable name.
 
 ### Arrow Functions (ES6)
 
