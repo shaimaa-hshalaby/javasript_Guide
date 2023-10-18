@@ -61,6 +61,32 @@ function add(a, b) {
 const result = add(3, 5); // result is 8
 ```
 
+### The difference between Parameters and Arguments
+
+#### Parameters
+
+-    Parameters are used to specify what kind of values a function expects to receive when it is called.
+-    They have names and data types specified in the function declaration.
+-    Parameters are part of the function's signature.
+  
+```javascript
+    function add(a, b) {
+      return a + b;
+    }
+```
+
+
+#### Arguments
+
+-    Arguments are used when you call or invoke a function.
+-    They are the actual values or expressions that you pass into a function when it's called.
+-    Arguments are the real values that match the parameters defined in the function.
+-    Arguments are also called "actual arguments."
+  
+```javascript
+    const result = add(5, 3);
+```
+
 ## Function Return Statement
 
 #### Function return values
