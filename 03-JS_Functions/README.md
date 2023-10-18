@@ -51,6 +51,24 @@ const greet = (name) => {
 greet("Charlie"); // Output: "Hello, Charlie!"
 ```
 
+### Anonymous Function 
+
+An anonymous function expression is a JavaScript function that does not have a name. These functions are typically defined on the fly and are not stored in a variable. 
+
+Here's a simple example of an anonymous function used with the `addEventListener` method to handle a button click event:
+
+```javascript
+// Select a button element by its ID
+const myButton = document.getElementById("myButton");
+
+// Add a click event listener with an anonymous function
+myButton.addEventListener("click", function() {
+    console.log("Button clicked!");
+});
+```
+
+In this example, an anonymous function is passed as the event handler for the button's click event. When the button is clicked, the function is executed, and it logs "Button clicked!" to the console. Anonymous functions like these are useful for handling events and other situations where you need a small, one-time function.
+
 ## Function Parameters and Arguments
 
 Functions can accept parameters, which are variables that hold the values passed to the function when it's called.
