@@ -117,6 +117,52 @@ Here's an example:
 In this example, the `returnNothing` function does not have a return value specified. When you call the function and assign its result to the `result` variable, it becomes `undefined`.
 
 Returning nothing or `undefined` can be useful in scenarios where a function is used for its side effects (e.g., modifying global variables, performing I/O operations, or displaying something on the user interface) rather than producing a specific result.
+--------------------------------------------
+## Difference between Functions and Methods
+
+"Method" and "function" are closely related terms in programming, and the primary difference between them lies in how they are associated with and invoked in code.
+
+**Function:**
+- A function is a self-contained block of code that performs a specific task or set of tasks.
+- Functions are defined independently and can be called or invoked from various parts of a program.
+- Functions can accept input (parameters or arguments), process it, and return output.
+- They can be global, meaning they are defined at the top level of a script, and can be called from anywhere in the code.
+- Functions are not inherently tied to objects or data structures.
+
+Example of a function in JavaScript:
+
+```javascript
+function add(a, b) {
+  return a + b;
+}
+
+const result = add(3, 5); // Calling the function
+console.log(result); // Output: 8
+```
+
+**Method:**
+- A method is a function that is associated with an object, and it defines the behavior or actions that an object can perform.
+- Methods are defined within an object and can access the object's data (properties) and modify them.
+- They are called on objects to perform specific tasks or computations related to that object.
+- Methods are tied to the object they are a part of and can access the object's internal state.
+
+Example of a method in JavaScript:
+
+```javascript
+const person = {
+  name: "John",
+  age: 30,
+  greet: function() {
+    console.log(`Hello, my name is ${this.name} and I'm ${this.age} years old.`);
+  }
+};
+
+person.greet(); // Calling the method
+```
+
+In this example, `greet` is a method of the `person` object. It accesses the object's properties (`name` and `age`) to generate a greeting message.
+
+In summary, the key difference is that a function is a standalone piece of code that can be called from anywhere in the program, while a method is a function associated with an object, and it operates on the object's data. Methods are used to define the behaviors specific to an object, whereas functions are more general-purpose and can be used independently.
 
 --------------------------------------------
 
