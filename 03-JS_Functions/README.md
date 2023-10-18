@@ -161,6 +161,7 @@ Here's an example:
 In this example, the `returnNothing` function does not have a return value specified. When you call the function and assign its result to the `result` variable, it becomes `undefined`.
 
 Returning nothing or `undefined` can be useful in scenarios where a function is used for its side effects (e.g., modifying global variables, performing I/O operations, or displaying something on the user interface) rather than producing a specific result.
+
 --------------------------------------------
 ## Difference between Functions and Methods
 
