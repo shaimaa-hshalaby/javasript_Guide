@@ -93,6 +93,8 @@ myButton.addEventListener("click", function() {
 
 In this example, an anonymous function is passed as the event handler for the button's click event. When the button is clicked, the function is executed, and it logs "Button clicked!" to the console. Anonymous functions like these are useful for handling events and other situations where you need a small, one-time function.
 
+------------------------------------------------------------
+
 ## Function Parameters and Arguments
 
 Functions can accept parameters, which are variables that hold the values passed to the function when it's called.
@@ -130,6 +132,8 @@ const result = add(3, 5); // result is 8
 ```javascript
     const result = add(5, 3);
 ```
+
+--------------------------------------------------------
 
 ## Function Return Statement
 
@@ -210,6 +214,91 @@ In this example, `greet` is a method of the `person` object. It accesses the obj
 In summary, the key difference is that a function is a standalone piece of code that can be called from anywhere in the program, while a method is a function associated with an object, and it operates on the object's data. Methods are used to define the behaviors specific to an object, whereas functions are more general-purpose and can be used independently.
 
 --------------------------------------------
+
+## Calling Functions with Fewer Arguments without Default Values
+
+In JavaScript, you can call functions with fewer arguments than they expect, even if default values aren't explicitly provided. The ability to omit arguments when calling a function can be helpful in various scenarios, allowing you to provide only the necessary information while leaving the rest to be `undefined` or without values.
+
+Here's how calling functions with fewer arguments without default values works:
+
+### Missing Arguments
+
+When you call a function with fewer arguments than it expects, the missing arguments are automatically assigned the value of `undefined`.
+
+```javascript
+function greet(name, age, city) {
+  console.log(`Name: ${name}, Age: ${age}, City: ${city}`);
+}
+
+greet("Alice", 25); 
+// Output: "Name: Alice, Age: 25, City: undefined"
+```
+
+In the example above, the `city` parameter is missing when calling the `greet` function, so it's assigned the value `undefined`. This behavior is a result of JavaScript's permissive function parameter handling.
+
+### Checking for Missing Arguments
+
+You can explicitly check for missing arguments using conditional statements to handle them differently if needed.
+
+```javascript
+function greet(name, age, city) {
+  if (typeof name === 'undefined') {
+    name = 'Guest';
+  }
+  if (typeof age === 'undefined') {
+    age = 30;
+  }
+  if (typeof city === 'undefined') {
+    city = 'Unknown';
+  }
+  
+  console.log(`Name: ${name}, Age: ${age}, City: ${city}`);
+}
+
+greet("Alice", 25); 
+// Output: "Name: Alice, Age: 25, City: Unknown"
+```
+
+In this modified `greet` function, we explicitly check each argument for `undefined` values and assign default values if they are missing.
+
+---------------------------------------------
+
+## JavaScript Functions with Default Values
+
+In JavaScript, when you call a function with missing arguments, those parameters are assigned the value `undefined`. While this is the default behavior, there are cases where you'd like to provide a fallback value when an argument is not passed to the function. That's where default values come into play.
+
+Here's the basic syntax:
+
+```javascript
+function functionName(param1 = defaultValue1, param2 = defaultValue2, /* ... */) {
+  // Function code
+}
+```
+
+Let's see how you can create and use functions with default values with a simple example:
+
+```javascript
+function greet(name = "Guest") {
+  console.log(`Hello, ${name}!`);
+}
+
+greet("Alice"); // Output: "Hello, Alice!"
+greet();         // Output: "Hello, Guest!"
+```
+
+While default values are useful, you can always override them by providing an argument when calling the function. The provided argument takes precedence over the default value.
+
+```javascript
+function greet(name = "Guest") {
+  console.log(`Hello, ${name}!`);
+}
+
+greet("Alice");    // Output: "Hello, Alice!"
+greet("Bob");      // Output: "Hello, Bob!"
+greet(undefined);   // Output: "Hello, Guest!" (default value used)
+```
+
+---------------------------------------------
 
 ## Higher-Order Functions in JavaScript: A Comprehensive Guide
 
@@ -309,17 +398,6 @@ Here are some common use cases for higher-order functions:
 - **Be Mindful of `this`**: When using higher-order functions that return functions, be aware of how `this` is bound. Arrow functions can help preserve the parent context.
 
 ----------------------------------------------
-## Anonymous Functions
-
-Anonymous functions are functions without a name. They are often used for one-time operations and can be defined inline.
-
-```javascript
-const square = function(x) {
-    return x * x;
-};
-
-const result = square(7); // result is 49
-```
 
 ## Callback Functions
 
