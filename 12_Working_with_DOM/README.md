@@ -62,6 +62,7 @@ window.setTimeout(function() {
 ```
 
 ---------------------------------------------
+## `document` common used properties
 
 | Property                | Description                                          |
 |-------------------------|------------------------------------------------------|
@@ -80,6 +81,8 @@ window.setTimeout(function() {
 | `document.scripts`      | Returns a collection of all `<script>` elements in the document. |
 | `document.styleSheets`  | Returns a collection of all the stylesheets in the document. |
 
+
+## `document` common used methods
 
 
 | Method                                  | Description                                          |
