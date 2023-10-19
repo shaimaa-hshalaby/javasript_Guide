@@ -270,9 +270,25 @@ image.src = "new-image.jpg"; // Changes the image source using the property.
 
 3. Modifying attributes directly in JavaScript using `.setAttribute()` may not immediately affect the properties, and vice versa. In some cases, changes to one are reflected in the other, but it's not guaranteed.
 
+------------------------------------------------------
 
+## DOM Manipulation and DOM Traversal
 
+**DOM Manipulation** and **DOM Traversal** are two fundamental tasks in web development that involve interacting with the Document Object Model (DOM) to access and modify elements on a web page. While they are related, they serve different purposes:
 
+**DOM Manipulation:**
+
+- **Definition:** DOM manipulation involves directly changing the properties, attributes, or content of DOM elements to modify the appearance or behavior of a web page.
+- **Use Cases:** You use DOM manipulation to update the content, style, or attributes of existing elements. For example, you might change the text of a paragraph, add or remove HTML elements, modify styles, or toggle the visibility of an element.
+- **Methods:** Common DOM manipulation methods include `innerHTML`, `textContent`, `setAttribute`, `appendChild`, `removeChild`, and methods for modifying CSS properties.
+
+**DOM Traversal:**
+
+- **Definition:** DOM traversal refers to navigating through the DOM tree to find and access elements relative to other elements. It's about moving between parent, child, and sibling nodes to locate specific elements.
+- **Use Cases:** DOM traversal is commonly used to find elements, often based on their relationships to other elements, their classes, or their position in the DOM tree. It's especially useful for selecting elements dynamically based on user actions.
+- **Methods:** Common DOM traversal methods include `getElementById`, `getElementsByClassName`, `getElementsByTagName`, `querySelector`, `querySelectorAll`, and various methods for traversing parent, child, and sibling nodes.
+
+---------------------------------------------------------------
 
 
 
