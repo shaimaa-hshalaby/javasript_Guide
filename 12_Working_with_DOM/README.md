@@ -63,6 +63,45 @@ window.setTimeout(function() {
 
 ---------------------------------------------
 
+| Property                | Description                                          |
+|-------------------------|------------------------------------------------------|
+| `document.title`        | Gets or sets the title of the current document.     |
+| `document.URL`          | Returns the full URL of the current document.       |
+| `document.domain`       | Gets or sets the domain of the current document's URL. |
+| `document.cookie`       | Gets or sets the cookies associated with the current document. |
+| `document.documentElement` | Returns the root element of the document (usually `<html>`). |
+| `document.body`         | Returns the `<body>` element of the document.       |
+| `document.head`         | Returns the `<head>` element of the document.       |
+| `document.location`     | Provides information about the URL and allows for navigation. |
+| `document.referrer`     | Returns the URL of the document that referred to the current document. |
+| `document.forms`        | Returns a collection of all `<form>` elements in the document. |
+| `document.images`       | Returns a collection of all `<img>` elements in the document. |
+| `document.links`        | Returns a collection of all `<a>` elements with `href` attributes. |
+| `document.scripts`      | Returns a collection of all `<script>` elements in the document. |
+| `document.styleSheets`  | Returns a collection of all the stylesheets in the document. |
+
+
+
+| Method                                  | Description                                          |
+|-----------------------------------------|------------------------------------------------------|
+| `document.getElementById(id)`            | Returns the element with the specified `id` attribute. |
+| `document.getElementsByClassName(class)`  | Returns a live HTMLCollection of elements with the specified class name. |
+| `document.getElementsByTagName(tag)`      | Returns a live HTMLCollection of elements with the specified tag name. |
+| `document.querySelector(selector)`        | Returns the first element that matches the specified CSS selector. |
+| `document.querySelectorAll(selector)`     | Returns a static NodeList of all elements that match the specified CSS selector. |
+| `document.createElement(tagName)`        | Creates a new HTML element with the specified tag name. |
+| `document.createTextNode(text)`          | Creates a new text node with the specified text content. |
+| `document.appendChild(node)`             | Appends a child node to the current element.       |
+| `document.removeChild(node)`              | Removes a child node from the current element.     |
+| `document.replaceChild(newNode, oldNode)` | Replaces an old child node with a new one.         |
+| `document.getElementById(id).setAttribute(attribute, value)` | Sets the value of an attribute on the specified element. |
+| `document.getElementById(id).getAttribute(attribute)`        | Retrieves the value of the specified attribute from the element. |
+| `document.getElementById(id).removeAttribute(attribute)`     | Removes the specified attribute from the element. |
+| `document.getElementById(id).addEventListener(event, handler)` | Attaches an event listener to the specified element. |
+| `document.getElementById(id).removeEventListener(event, handler)` | Removes an event listener from the specified element. |
+
+---------------------------------------------
+
 ## Elements & Nodes
 
 In the context of the Document Object Model (DOM) in web development, "node" and "element" are related concepts, but they represent different things. Understanding the distinction between these terms is crucial for working with the DOM effectively. Here's the difference:
