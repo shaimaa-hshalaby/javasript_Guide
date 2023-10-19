@@ -496,6 +496,114 @@ const result = factorial(5); // result is 120
 
 ---------------------------------------------------------------------------
 
+## JavaScript's `bind()`, `call()`, and `apply()`
+
+Three essential methods for manipulating the context of functions are `bind()`, `call()`, and `apply()`. These methods allow you to control the value of the `this` keyword within a function and provide arguments as needed. In this tutorial, we will explore these methods, their differences, and use cases.
+
+### 1. Understanding `this`
+
+Before diving into `bind()`, `call()`, and `apply()`, it's essential to understand the concept of the `this` keyword in JavaScript. `this` refers to the current execution context and can vary depending on how a function is called. It can point to different objects or values, which is why these methods are useful.
+
+### 2. `bind()`
+
+The `bind()` method creates a new function that, when executed, has its `this` keyword set to a specific value, regardless of how it's called. This method does not invoke the function immediately but returns a new function with the specified context.
+
+### Syntax:
+
+```javascript
+const newFunction = originalFunction.bind(context, arg1, arg2, ...);
+```
+
+- `originalFunction`: The function whose context you want to change.
+- `context`: The value to which you want to set `this` within the function.
+- `arg1, arg2, ...`: Optional arguments to pass to the bound function.
+
+### Example:
+
+```javascript
+const person = {
+  name: "John",
+  greet: function (message) {
+    console.log(`${message}, ${this.name}`);
+  },
+};
+
+const greetJohn = person.greet.bind(person, "Hello");
+greetJohn(); // Output: "Hello, John"
+```
+
+## 3. `call()`
+
+The `call()` method is used to invoke a function immediately and allows you to specify the value of `this` and pass arguments individually. Unlike `bind()`, it doesn't create a new function but executes the original function with the provided context and arguments.
+
+### Syntax:
+
+```javascript
+originalFunction.call(context, arg1, arg2, ...);
+```
+
+- `originalFunction`: The function you want to call.
+- `context`: The value to which you want to set `this` within the function.
+- `arg1, arg2, ...`: Optional arguments to pass to the function.
+
+### Example:
+
+```javascript
+const person = {
+  name: "Jane",
+};
+
+function greet(message) {
+  console.log(`${message}, ${this.name}`);
+}
+
+greet.call(person, "Hi"); // Output: "Hi, Jane"
+```
+
+## 4. `apply()`
+
+The `apply()` method is similar to `call()` but allows you to pass an array or array-like object of arguments to the function. It is particularly useful when you have a variable number of arguments to pass.
+
+### Syntax:
+
+```javascript
+originalFunction.apply(context, [arg1, arg2, ...]);
+```
+
+- `originalFunction`: The function you want to call.
+- `context`: The value to which you want to set `this` within the function.
+- `[arg1, arg2, ...]`: An array or array-like object of arguments to pass to the function.
+
+### Example:
+
+```javascript
+const person = {
+  name: "Alice",
+};
+
+function greet(message, punctuation) {
+  console.log(`${message}, ${this.name}${punctuation}`);
+}
+
+greet.apply(person, ["Hey", "!"]); // Output: "Hey, Alice!"
+```
+
+## 5. Key Differences
+
+- `bind()` returns a new function with the specified context, whereas `call()` and `apply()` execute the function immediately.
+- `call()` and `apply()` are similar, but `apply()` accepts an array of arguments.
+- `bind()` is often used for creating functions with a specific context that can be called later.
+- `call()` and `apply()` are useful for invoking functions immediately with specific arguments.
+
+## 6. Use Cases
+
+- `bind()` is great for creating event handlers or functions to be used as callbacks.
+- `call()` and `apply()` are handy when you need to invoke a function with a specific context and arguments, like in library functions or object-oriented programming.
+
+In conclusion, `bind()`, `call()`, and `apply()` are powerful tools in JavaScript that help you control the `this` context and pass arguments to functions as needed. Understanding these methods and their differences will make you a more effective JavaScript developer.
+
+---------------------------------------------------------------------------
+
 ## Exercises 
 
 ### Creating Functions 
