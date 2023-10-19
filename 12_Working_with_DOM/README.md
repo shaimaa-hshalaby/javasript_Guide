@@ -1,3 +1,11 @@
+## Browser API Term
+The term "Browser API" refers to a set of interfaces and methods provided by web browsers to allow developers to interact with and manipulate web content, such as HTML, CSS, and JavaScript, within a web page. These APIs provide a way to access and control various aspects of web browsers and the Document Object Model (DOM) of web pages. They are essential for building web applications and enhancing user experiences.
+
+Some common categories of Browser APIs include:
+
+**DOM API:** These APIs provide methods and objects for accessing and manipulating the DOM of a web page. Common DOM APIs include document, window, and the various methods for querying and manipulating elements in the DOM.
+
+
 ## Introduction to the Document Object Model (DOM)
 
 The Document Object Model, commonly referred to as the DOM, is a fundamental concept in web development.
