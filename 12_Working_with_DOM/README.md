@@ -219,6 +219,22 @@ image.src = "new-image.jpg"; // Changes the image source using the property.
 
 3. Modifying attributes directly in JavaScript using `.setAttribute()` may not immediately affect the properties, and vice versa. In some cases, changes to one are reflected in the other, but it's not guaranteed.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------
 ## DOM Manipulation
 
 **DOM manipulation** refers to the process of dynamically interacting with and modifying the Document Object Model (DOM) of a web page using JavaScript or other scripting languages. It involves tasks like:
