@@ -89,11 +89,158 @@ An "element" is a specific type of node in the DOM that represents an HTML eleme
 
 In summary, all elements are nodes, but not all nodes are elements. Elements are a specific category of nodes that represent the HTML tags in the DOM, whereas nodes encompass a broader range of objects in the DOM tree, including elements, text, attributes, and more. Understanding this distinction is essential for working with the DOM effectively and accurately targeting the elements you want to manipulate or interact with in your web development projects.
 
-
-
 ------------------------------------------------------------------------------
+## How does the browser render the pages
+
+Here's how the process works:
+
+1. **HTML Parsing:** When you load a web page, the browser retrieves the HTML and starts parsing it. As it parses the HTML, it constructs the DOM tree, which represents the structure and hierarchy of the web page.
+
+2. **CSS Styling:** After constructing the DOM, the browser applies the styles defined in the linked or inline CSS to the elements in the DOM. This is what gives the page its visual appearance.
+
+3. **Layout and Rendering:** Once the DOM is constructed and styled, the browser performs layout calculations to determine the position and size of each element on the page. It then renders the web page, displaying it on the screen.
+
+4. **User Interaction:** The user can interact with the rendered page by clicking links, filling out forms, or performing other actions. These interactions can trigger navigation, form submissions, or other operations.
 
 
+-----------------------------------------------------------------------------
+
+## Querying DOM Elements in JavaScript
+
+Manipulating and interacting with elements on a web page is a fundamental part of web development. To achieve this, you need to understand how to query and access these elements in the Document Object Model (DOM). In this tutorial, we will explore the different methods for querying DOM elements in JavaScript and discuss the various return types associated with each method.
+
+### Common DOM Element Querying Methods
+
+#### `getElementById()`
+
+This method retrieves an element by its unique `id` attribute. It returns a single element, or `null` if no matching element is found.
+
+**Example:**
+```javascript
+const element = document.getElementById("myElement");
+```
+
+#### `getElementsByClassName()`
+
+This method returns a collection of elements that have a specified class name. It returns an HTMLCollection or NodeList.
+
+**Example:**
+```javascript
+const elements = document.getElementsByClassName("myClass");
+```
+
+### `getElementsByTagName()`
+
+This method returns a collection of elements with a specified HTML tag name. It also returns an HTMLCollection or NodeList.
+
+**Example:**
+```javascript
+const paragraphs = document.getElementsByTagName("p");
+```
+
+### `querySelector()`
+
+`querySelector()` allows you to select the first element that matches a CSS selector. It returns a single element or `null` if no match is found.
+
+**Example:**
+```javascript
+const element = document.querySelector("#myElement .myClass");
+```
+
+### `querySelectorAll()`
+
+This method returns all elements that match a CSS selector. It returns a NodeList.
+
+**Example:**
+```javascript
+const elements = document.querySelectorAll(".myClass");
+```
+
+## Return Types
+
+The return types of the querying methods are as follows:
+
+- `getElementById()`: Returns a single HTML element or `null`.
+- `getElementsByClassName()`: Returns an HTMLCollection or NodeList (array-like collection).
+- `getElementsByTagName()`: Returns an HTMLCollection or NodeList.
+- `querySelector()`: Returns a single HTML element or `null`.
+- `querySelectorAll()`: Returns a NodeList.
+
+## Elements Query Best Practices
+
+- Use `getElementById()` when you need a single, unique element with an `id` attribute.
+- When querying by class name or tag name, prefer `querySelector()` or `querySelectorAll()` for more flexible selection based on CSS selectors.
+- Be aware that `getElementsByClassName()` and `getElementsByTagName()` return live collections (which means that it reflects the current state of the DOM. any changes in the DOM will reflect to the collection), while `querySelectorAll()` returns a static NodeList ( adding or removing elements to the DOM, the NodeList you obtained remains unchanged) 
+
+-----------------------------------------------------------------------------
+
+## Difference Between Attributes and Properties
+
+In the context of DOM (Document Object Model) and web development, there is a distinction between "attributes" and "properties."
+
+**`Attributes`**
+
+- **Attributes** are the initial values that are specified in the HTML source code and are part of the element's markup.
+- They are defined in the element's opening tag and provide configuration settings or metadata for that element.
+- Examples of attributes include `id`, `class`, `src`, `href`, and other HTML attributes.
+- Attributes are typically represented as strings.
+
+```html
+<a id="myLink" href="https://www.example.com">Example Link</a>
+```
+
+**`Properties`**
+
+- **Properties** are values that are accessible and modifiable through the DOM using JavaScript.
+- They represent the current state of the element and can be updated during runtime.
+- Properties correspond to attributes but are often derived from attributes and can have different data types.
+- For example, the `href` attribute becomes the `href` property in JavaScript, but it can be accessed as a string.
+
+### Synchronization Between Attributes and Properties
+
+In many cases, there is a one-way synchronization from attributes to properties when the page is loaded:
+
+1. When the page loads, the values of attributes are used to initialize the corresponding properties. For example, the `src` attribute of an `<img>` element is used to set the `src` property in JavaScript.
+
+```html
+<img src="image.jpg" id="myImage">
+```
+
+```javascript
+const image = document.getElementById("myImage");
+console.log(image.src); // This will log the absolute URL of the image.
+```
+
+2. After the initial synchronization, properties can change independently of attributes. For example, you can change the `src` property in JavaScript, and it won't affect the `src` attribute in the HTML source code.
+
+```javascript
+image.src = "new-image.jpg"; // Changes the image source using the property.
+```
+
+3. Modifying attributes directly in JavaScript using `.setAttribute()` may not immediately affect the properties, and vice versa. In some cases, changes to one are reflected in the other, but it's not guaranteed.
+
+## DOM Manipulation
+
+**DOM manipulation** refers to the process of dynamically interacting with and modifying the Document Object Model (DOM) of a web page using JavaScript or other scripting languages. It involves tasks like:
+
+- Accessing elements on the page.
+- Modifying element properties and attributes.
+- Adding, removing, or replacing elements.
+- Responding to user interactions and events.
+- Creating animations and transitions.
+- Updating the content and structure of a web page dynamically.
+
+DOM manipulation is fundamental for building interactive and dynamic web applications. It allows developers to update the page's content, structure, and appearance in response to user actions, making web applications more engaging and user-friendly. It is a core skill for front-end web developers.
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------
 ## 2. Accessing DOM Elements
 
 ### Selecting Elements
