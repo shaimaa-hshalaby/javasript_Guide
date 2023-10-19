@@ -8,7 +8,7 @@ The DOM is a bridge between web content (e.g., HTML, XML) and programming langua
 It provides a structured way to access and manipulate the elements and data on a web page, making it possible to respond to user interactions, update content dynamically,
 and create rich, responsive user interfaces.
 
-Key concepts of the DOM include:
+### Key concepts of the DOM include:
 
 1. **Structured Tree:**
    The DOM represents a web page as a tree structure, where each element (e.g., HTML tags) is represented as a node, and these nodes are organized hierarchically.
@@ -19,6 +19,7 @@ Key concepts of the DOM include:
 4. **Cross-Browser Compatibility:**
    The DOM is supported by virtually all modern web browsers, making it a standard and widely used tool for web development. It provides a consistent way to interact with web content across different browsers.
 
+--------------
 
 In JavaScript, there are 2 main objects, `document` and `window` objects. they are part of the Document Object Model (DOM), but they serve different purposes and have distinct roles in a web page's structure and interaction.
 
