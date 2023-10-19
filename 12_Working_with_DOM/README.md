@@ -290,15 +290,63 @@ image.src = "new-image.jpg"; // Changes the image source using the property.
 
 ---------------------------------------------------------------
 
+## Child, Parent, Descendant, Ancestor and Sibling Elements
 
+1. **Child Element:**
+   - A "child element" is an element that is nested within another element. It is a direct descendant of the parent element.
+   - For example, in the HTML below the `<p>` element is a child element of the `<div>` element.
+      
+      ```html
+      <div>
+        <p>Some text</p>
+      </div>
+      ```
 
+2. **Parent Element:**
+   - A "parent element" is an element that contains one or more child elements. It is at a higher level in the DOM hierarchy.
+   - In the example below, the `<div>` element is the parent of the `<p>` element.
 
+      ```html
+      <div>
+        <p>Some text</p>
+      </div>
+      ```
 
+3. **Descendant Elements:**
+   - "Descendant elements" are elements that are nested at any level within another element. They can be direct children or nested deeper within child elements.
+   - In the HTML below, both the `<p>` and `<strong>` elements are descendants of the `<div>` element.
 
+      ```html
+      <div>
+        <p>
+          <strong>Important</strong>
+        </p>
+      </div>
+      ```
 
+4. **Ancestor Elements:**
+   - "Ancestor elements" are elements that are higher in the hierarchy and contain a given element. They can be parents, grandparent elements, or even higher ancestors.
+   - In the HTML below, the `<div>` element is an ancestor of the `<p>` and `<strong>` elements.
 
+      ```html
+      <div>
+        <p>
+          <strong>Important</strong>
+        </p>
+      </div>
+      ```
 
+5. **Sibling Elements:**
+   - "Sibling elements" are elements that share the same parent and are at the same level in the hierarchy.
+   - In the HTML below, the `<li>` elements are siblings of each other.
 
+      ```html
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+      ```
 
 
 ----------------------------------------------------
