@@ -124,7 +124,7 @@ A "node" in the DOM is a generic term for any individual object within the DOM t
 
 - **Element Nodes:** These represent HTML elements in the document, like `<div>`, `<p>`, or `<a>`.
 
-- **Text Nodes:** These represent the text content of an element.
+- **Text Nodes:** These represent the text content of an element, spaces and new lines.
 
 - **Attribute Nodes:** These represent the attributes of an element, like `id`, `class`, or `src`.
 
@@ -350,32 +350,19 @@ image.src = "new-image.jpg"; // Changes the image source using the property.
 
 ----------------------------------------------------
 
-#DOM Traversal in JavaScript
-
-DOM (Document Object Model) traversal is the process of navigating and selecting elements within the hierarchical structure of a web page. It's an essential skill for web developers, as it allows you to locate and interact with specific elements on a page. In this tutorial, we'll explore DOM traversal techniques in JavaScript, providing you with a comprehensive guide on how to access and manipulate elements within the DOM.
-
-## Table of Contents
-
-1. Introduction to DOM Traversal
-2. Selecting Elements by Tag Name
-3. Selecting Elements by ID
-4. Selecting Elements by Class Name
-5. Navigating Parent and Child Elements
-6. Traversing Siblings
-7. Using Selectors: `querySelector` and `querySelectorAll`
-8. Best Practices and Tips
-9. Conclusion
+## DOM Traversal in JavaScript
  
 DOM traversal involves moving up, down, and across this tree to locate elements for various purposes, such as reading, updating, or deleting content.
 getting elements by tag names, class names or IDs are types of DOM traversal.
-`document.getElementsByTagName("p");`, `document.getElementById("myElement");`, `document.getElementsByClassName("myClass");`
+- `document.getElementsByTagName("p");`
+- `document.getElementById("myElement");`
+- `document.getElementsByClassName("myClass");`
 
-
-## Navigating Parent and Child Elements
+### Navigating Parent and Child Elements
 
 You can traverse up and down the DOM tree to access parent and child elements:
 
-- Access the parent node with `.parentNode`.
+- Access the parent node with `.parentNode` or `.parentElement`.
 - Access child nodes with `.childNodes`, which returns a collection that may include text nodes.
 - Access child elements using `.children`, which returns only element nodes.
 
@@ -384,7 +371,7 @@ const parent = element.parentNode; // Access the parent node
 const children = element.children; // Access child elements
 ```
 
-## 6. Traversing Siblings
+### Traversing Siblings
 
 Traversing siblings involves accessing elements that share the same parent node. Common sibling traversal methods include:
 
