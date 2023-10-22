@@ -295,6 +295,19 @@ The `reduce()` method is incredibly versatile and is often used to solve a wide 
 
 
 ## 7. Method Chain
+
+Method chaining in JavaScript arrays is a powerful technique that allows you to perform a sequence of array operations (methods) one after the other on the same array. Each method in the chain processes the array and returns a new array or value, which can be used as the input for the next method. This creates a cleaner and more concise way to work with arrays, as it eliminates the need for intermediate variables.
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+const result = numbers
+  .map((num) => num * 2)   // Multiply each number by 2
+  .filter((num) => num > 5) // Filter out numbers less than or equal to 5
+  .reduce((acc, num) => acc + num, 0); // Sum the remaining numbers
+console.log(result); // Output: 18
+```
+
+
 ## 8. Multidimensional Arrays
 
 A multidimensional array is an array of arrays. It allows you to create grids, tables, or matrices.
