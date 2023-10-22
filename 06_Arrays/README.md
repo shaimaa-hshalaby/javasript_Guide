@@ -25,6 +25,14 @@ const numbers = new Array(1, 2, 3); // With arguments
 const emptyArray = new Array(); // Without arguments, creates an empty array
 ```
 
+when you use the Array constructor with a single numeric argument, it's treated as the initial length of the array. The resulting array will have the specified length, but its elements will be initially empty (i.e., they will be set to undefined).
+
+```javascript
+const myArray = new Array(5);
+console.log(myArray); // Outputs: [ , , , , ]
+console.log(myArray.length); // Outputs: 5
+```
+
 ### Array.from() Method
 
 The `Array.from()` method allows you to create an array from an iterable object (e.g., a string, a set, a map, or an array-like object).
