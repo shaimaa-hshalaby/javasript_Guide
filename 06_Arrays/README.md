@@ -294,7 +294,8 @@ If you use `reduce()` on an empty array without providing an `initialValue`, it 
 The `reduce()` method is incredibly versatile and is often used to solve a wide range of problems involving arrays, including calculating sums, averages, grouping elements, and more. It's a valuable tool for working with data in JavaScript.
 
 
-## 7. Multidimensional Arrays
+## 7. Method Chain
+## 8. Multidimensional Arrays
 
 A multidimensional array is an array of arrays. It allows you to create grids, tables, or matrices.
 
@@ -306,7 +307,7 @@ const matrix = [
 ];
 ```
 
-## 8. Array Methods
+## 9. Array Methods
 
 JavaScript provides various array methods for performing common operations on arrays. Here are a few essential ones:
 
@@ -462,11 +463,11 @@ console.log(firstEvenIndex); // Output: 3
 
 In this example, the `findIndex()` method returns the index 3, which is the position of the first even number, `8`.
 
-## Handling No Matches
+### Handling No Matches
 
 It's important to note that both `find()` and `findIndex()` will return `undefined` or -1, respectively, if no element matches the condition. Therefore, it's a good practice to check the return value before using it to prevent unexpected behavior in your code.
 
-### Example:
+#### Example:
 
 ```javascript
 const numbers = [1, 3, 5, 7, 9];
@@ -484,8 +485,7 @@ In this example, since there are no even numbers in the array, the code displays
 
 These `find()` and `findIndex()` methods are useful for searching arrays based on specific conditions and are commonly used in many JavaScript applications to filter and extract data from arrays.
 
-##  Array Destructuring
-
+## 10. Array Destructuring
 Array destructuring allows you to extract values from arrays and assign them to variables in a concise way.
 
 ```javascript
@@ -494,7 +494,7 @@ console.log(first); // "apple"
 console.log(second); // "banana"
 ```
 
-## 10. Working with Arrays
+## 11. Working with Arrays
 
 ### Copy an Array
 
