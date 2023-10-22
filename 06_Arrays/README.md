@@ -322,7 +322,67 @@ const index = array.indexOf(object1);
 console.log(index); // Output: 0
 ```
 
-## 9. Array Destructuring
+### find() &  findIndex()
+
+#### find() Method
+
+The `find()` method is used to find the first element in an array that satisfies a given condition. It takes a callback function as an argument, which is executed for each element in the array until a match is found. If a match is found, the `find()` method returns the value of that element. If no element matches the condition, `find()` returns `undefined`.
+
+#### Example:
+
+Suppose we have an array of numbers, and we want to find the first even number in the array.
+
+```javascript
+const numbers = [1, 3, 5, 8, 10, 15];
+
+const firstEven = numbers.find((number) => number % 2 === 0);
+
+console.log(firstEven); // Output: 8
+```
+
+In this example, the `find()` method returns the first even number it encounters, which is `8`.
+
+### findIndex() Method
+
+The `findIndex()` method is similar to `find()`, but it returns the index of the first element that matches the specified condition. If no matching element is found, it returns -1.
+
+#### Example:
+
+Let's use the same array of numbers and find the index of the first even number.
+
+```javascript
+const numbers = [1, 3, 5, 8, 10, 15];
+
+const firstEvenIndex = numbers.findIndex((number) => number % 2 === 0);
+
+console.log(firstEvenIndex); // Output: 3
+```
+
+In this example, the `findIndex()` method returns the index 3, which is the position of the first even number, `8`.
+
+## Handling No Matches
+
+It's important to note that both `find()` and `findIndex()` will return `undefined` or -1, respectively, if no element matches the condition. Therefore, it's a good practice to check the return value before using it to prevent unexpected behavior in your code.
+
+### Example:
+
+```javascript
+const numbers = [1, 3, 5, 7, 9];
+
+const firstEven = numbers.find((number) => number % 2 === 0);
+
+if (firstEven !== undefined) {
+  console.log(`The first even number is: ${firstEven}`);
+} else {
+  console.log('No even number found.');
+}
+```
+
+In this example, since there are no even numbers in the array, the code displays "No even number found."
+
+These `find()` and `findIndex()` methods are useful for searching arrays based on specific conditions and are commonly used in many JavaScript applications to filter and extract data from arrays.
+
+##  Array Destructuring
 
 Array destructuring allows you to extract values from arrays and assign them to variables in a concise way.
 
