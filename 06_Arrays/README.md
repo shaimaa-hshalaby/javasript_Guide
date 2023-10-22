@@ -140,6 +140,50 @@ const numFruits = fruits.length; // numFruits is 3
   fruits.sort(); // Sorts alphabetically: ["apple", "banana", "cherry"]
   ```
 
+Sure, let's modify the section on sorting arrays to include custom sorting:
+
+#### Sorting Arrays with Custom Sorting
+
+you can perform custom sorting by providing a comparison function as an argument to the `sort()` method.
+
+### Example with Custom Sorting:
+
+Suppose we have an array of strings representing the names of fruits, and we want to sort them based on their length (from shortest to longest). We can achieve this by specifying a custom sorting function.
+Here's how the callback function works:
+```javascript
+array.sort(function compareFunction(a, b) {
+  // The comparison logic goes here
+  // Return a negative value if 'a' should come before 'b'
+  // Return 0 if 'a' and 'b' are considered equal in sorting order
+  // Return a positive value if 'a' should come after 'b'
+});
+```
+
+```javascript
+const fruits = ["banana", "apple", "cherry", "date", "fig"];
+fruits.sort((a, b) => a.length - b.length);
+
+console.log("Sorted by length:", fruits);
+```
+
+In this example, we provide a custom sorting function as an argument to the `sort()` method. The function compares the lengths of the strings (`a.length - b.length`), which sorts the fruits from shortest to longest.
+
+### Example with Custom Sorting for Numbers:
+
+If you have an array of numbers and want to sort them in descending order, you can use a custom sorting function like this:
+
+```javascript
+const numbers = [10, 2, 5, 1, 8];
+numbers.sort((a, b) => b - a);
+
+console.log("Sorted in descending order:", numbers);
+```
+
+In this example, the custom sorting function `b - a` sorts the numbers in descending order.
+
+Custom sorting allows you to sort arrays based on specific criteria, making the `sort()` method a versatile tool for various sorting requirements.
+
+
 - **Reverse**: Reverses the order of elements in an array in place (mutates the original array).
 
   ```javascript
