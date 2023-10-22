@@ -33,6 +33,14 @@ console.log(myArray); // Outputs: [ , , , , ]
 console.log(myArray.length); // Outputs: 5
 ```
 
+we can also call Array() constructor funcation without the `new` keyword
+
+```javascript
+const myArray = Array('apple', 'banana', 'cherry');
+console.log(myArray); // Outputs: [ 'apple', 'banana', 'cherry' ]
+```
+
+
 ### Array.from() Method
 
 The `Array.from()` method allows you to create an array from an iterable object (e.g., a string, a set, a map, or an array-like object).
