@@ -309,6 +309,19 @@ const firstBananaIndex = fruits.indexOf("banana"); // 1
 const lastBananaIndex = fruits.lastIndexOf("banana"); // 3
 ```
 
+#### indexOf with objects(refrences)
+
+The indexOf method searches for an element by comparing the values or references of the elements within the array. If you pass an object as the argument to indexOf, it will search for the exact reference to that object within the array.
+
+```javascript
+const object1 = { name: 'Alice' };
+const object2 = { name: 'Bob' };
+const array = [object1, object2];
+
+const index = array.indexOf(object1);
+console.log(index); // Output: 0
+```
+
 ## 9. Array Destructuring
 
 Array destructuring allows you to extract values from arrays and assign them to variables in a concise way.
