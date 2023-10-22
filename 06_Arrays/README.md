@@ -239,6 +239,7 @@ const fruitString = fruits.join(", "); // "apple, banana, cherry"
 ```javascript
 const numbers = [1, 2, 3, 4, 5];
 const slicedArray = numbers.slice(1, 4); // [2, 3, 4]
+const slicedArray2 = numbers.slice(2); // [3,4,5]
 const arrCopy = numbers.slice(); // copy the whole array
 ```
 
