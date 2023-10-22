@@ -250,12 +250,12 @@ The `splice()` method is a built-in JavaScript array method used to add or remov
 
 Syntax:
 ```javascript
-array.splice(start[, deleteCount[, item1[, item2[, ...]]])
+array.splice(start, deleteCount, item1, item2, ...)
 ```
 
 Parameters:
 
-1. `start`: The index at which to start the modification. This is a required parameter.
+1. `start`: The index at which to start the modification. This is a required parameter. If the index is negative, js will count from the last element.
 
 2. `deleteCount`: The number of elements to remove from the array, starting at the `start` index. If this is 0, no elements will be removed. If omitted, all elements from the `start` index to the end of the array will be removed.
 
